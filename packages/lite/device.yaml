@@ -110,7 +110,7 @@ light:
       - script.execute: control_leds
     initial_state:
       color_mode: rgb
-      brightness: 100%
+      brightness: 25%
       red: 9.4%
       green: 73.3%
       blue: 94.9%
@@ -413,13 +413,13 @@ script:
   - id: control_leds_factory_reset_coming_up
     then:
       - light.turn_on:
-          brightness: 100%
+          brightness: 25%
           id: led_internal
           effect: "Factory Reset Coming Up"
   - id: control_leds_factory_reset_confirmed
     then:
       - light.turn_on:
-          brightness: 100%
+          brightness: 25%
           red: 100%
           green: 0%
           blue: 0%
